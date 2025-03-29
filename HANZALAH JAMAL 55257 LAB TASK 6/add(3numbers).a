@@ -1,0 +1,11 @@
+START:
+INP      ; Input a value and store it in the accumulator
+STA NUM  ; Store the accumulator value in memory location "NUM"
+INP      ; Input another value
+ADD NUM  ; Add the value stored in "NUM" to the accumulator
+STA NUM
+INP 
+ADD NUM
+OUT      ; Output the result
+HLT      ; Halt execution
+NUM: .data 1 0  ; Memory location labeled "NUM", initialized with 0
